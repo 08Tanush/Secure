@@ -1,0 +1,48 @@
+Docker commands 
+sudo apt install docker.io 
+
+sudo snap install docker
+
+ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add
+ commad to add Docker’s official GPG key
+
+sudo apt-key fingerprint 0EBFCD88
+
+commands 
+sudo docker --version
+
+sudo docker info 
+
+sudo docker pull alpine
+
+sudo docker run alpine /bin/sh
+
+sudo docker ps 
+
+sudo docker ps-a 
+
+sudo docker stop <container id>
+
+sudo docker start <container id >
+
+sudo docker kill <container id >
+
+sudo docker inspect <container id >
+
+to write or execute a script inside a container 
+
+ls 
+
+pwd 
+cd /etc
+ls
+
+cat/etc/hostname 
+touch myfiles.txt
+ls 
+
+echo "Hello from docker" > message.txt
+cat message.txt
+
+
+sudo docker exec -it <container id>

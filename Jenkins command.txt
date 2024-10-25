@@ -1,0 +1,19 @@
+Jenkins command 
+1 sudo apt-get install openjdk-11-jdk
+ 	or 
+sudo apt install openjdk-11-jdk -y java -version Install Jenkins 
+
+2 sudo apt update sudo apt upgrade -y
+
+3 wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+
+4 sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+5 sudo apt update sudo apt install jenkins -y
+
+TO start Jenkins 
+sudo systemctl start jenkins sudo systemctl enable Jenkins
+
+sudo ufw allow 8080
+
+sudo ufw status 8. 
